@@ -1,6 +1,0 @@
-################################################################
-# IMPORTANT NOTE ABOUT MAGNITIDE CODES ATTACHED TO DATA POINTS #
-################################################################
-
-Data users should take care to avoid the parsing of ‘NA’  (not applicable) 
-strings to missing values when reading the datafile using programming languages such as R or Python.
