@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Explorer</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">World<span>Explorer</span></div>
+    <div class="header-meta">Powered by World Bank · IMF · UN · OECD · OWID · UNESCO · SIPRI</div>
+  </header>
+
+  <!-- SHELL -->
+  <div class="shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="search-wrap">
+        <input type="text" class="search-box" id="searchInput" placeholder="Search countries...">
+        <div class="filter-row" id="filterRow">
+          <button class="filter-btn active" data-region="all">All</button>
+        </div>
+      </div>
+      <div class="country-count" id="countLabel">Loading...</div>
+      <div class="country-list" id="countryList">
+        <div class="loading-state">
+          <div class="spinner"></div>
+          Loading countries...
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main id="main">
+      <div class="empty-state">
+        <div class="empty-globe">🌍</div>
+        <h2>Select a Country</h2>
+        <p>Choose any country from the sidebar to explore its profile, economic data, demographics, health indicators, and more.</p>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
